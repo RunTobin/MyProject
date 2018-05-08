@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ff323232"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_dailyNum"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:text="1000"
+            android:gravity="center"
+            android:textColor="#D1EEEE"
+            android:textSize="28dip"/>
+
+        <TextView
+            android:id="@+id/item_dailyTime"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.55"
+            android:gravity="center"
+            android:text="2017/02/17 14:12:56"
+            android:textColor="#D1EEEE"
+            android:textSize="25dip"/>
+        <TextView
+            android:id="@+id/item_dailyTypeMain"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="主类型"
+            android:textColor="#D1EEEE"
+            android:textSize="25dip"/>
+        <TextView
+            android:id="@+id/item_dailyTypeSecond"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="次类型"
+            android:textColor="#D1EEEE"
+            android:textSize="25dip" />
+        <TextView
+            android:id="@+id/item_dailyUser"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="本地远程用户"
+            android:textColor="#D1EEEE"
+            android:textSize="25dip" />
+        <TextView
+            android:id="@+id/item_dailyIpAddress"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="远程主机地址"
+            android:textColor="#D1EEEE"
+            android:textSize="25dip" />
+    </LinearLayout>
+</LinearLayout>

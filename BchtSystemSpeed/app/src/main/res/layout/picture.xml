@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/picture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F4F4F"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/Bar"
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:fadeScrollbars="true"
+            android:nestedScrollingEnabled="true"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/pic_search"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="图片检索"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#D1EEEE"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/pic_VehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pic_search"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车辆类型"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_VeType"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/edit_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pic_ViolateType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pic_VehicleType"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="违规类型"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_ViType"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/edit_bg" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/pic_StartTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pic_ViolateType"
+               >
+
+                <TextView
+                    android:id="@+id/pic_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/EditText_Start"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/pic_tv1"
+                    android:background="@drawable/edit_bg"
+                    android:focusable="false"
+                    android:paddingLeft="20dp"
+                    android:text="" />
+
+                <ImageButton
+                    android:id="@+id/startTimeCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/EditText_Start"
+                    android:layout_alignRight="@+id/EditText_Start"
+                    android:layout_alignTop="@+id/EditText_Start"
+                    android:layout_below="@+id/pic_tv1"
+                    android:layout_gravity="right"
+                    android:background="@drawable/edit_bg"
+                    android:src="@android:drawable/ic_menu_edit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pic_EndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pic_StartTime"
+               >
+
+                <TextView
+                    android:id="@+id/pic_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/EditText_End"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/pic_tv2"
+                    android:background="@drawable/edit_bg"
+                    android:focusable="false"
+                    android:paddingLeft="20dp"
+                    android:text="" />
+
+                <ImageButton
+                    android:id="@+id/EndTimeCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/EditText_End"
+                    android:layout_alignRight="@+id/EditText_End"
+                    android:layout_alignTop="@+id/EditText_End"
+                    android:layout_below="@+id/pic_tv2"
+                    android:layout_gravity="right"
+                    android:background="@drawable/edit_bg"
+                    android:src="@android:drawable/ic_menu_edit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pic_EndTime"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp">
+
+                <Button
+                    android:id="@+id/pic_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_bg"
+                    android:text="查找"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:text="图片列表"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="序号"
+                    android:textColor="#000000"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="文件名称"
+                    android:textColor="#000000"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="文件日期"
+                    android:textColor="#000000"
+                    android:textSize="20dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pic_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/downloading_progress"
+                    style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal|center" />
+
+                <TextView
+                    android:id="@+id/pic_show_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="X"
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:id="@+id/pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pic_waiting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/pic_ListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

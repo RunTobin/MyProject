@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这里是根节点布局 -->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+
+    <LinearLayout
+        android:id="@+id/layout_osd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff323232"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/Bar"
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <!--第一个布局-->
+            <LinearLayout
+                android:id="@+id/osd_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_Location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="地点描述"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/osd_ET_Location"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:drawable/edit_text"
+                        android:editable="false"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_Load"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="道路编号"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/osd_ET_Load"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:drawable/edit_text"
+                        android:editable="false"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_Equipment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="标定证书编号"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/osd_ET_Equipment"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:drawable/edit_text"
+                        android:editable="false"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_Direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="方向编号"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/osd_ET_Direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_bg"
+                        android:editable="false"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="20dp"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_DirectionDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="方向描述"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/osd_ET_DirectionDescription"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:drawable/edit_text"
+                        android:editable="false"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_LaneDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="车道描述"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/osd_ET_LaneDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_bg"
+                        android:editable="false"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="20dp"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:visibility="invisible">
+
+                    <Button
+                        android:id="@+id/osd_Capture_Save"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/button_selector"
+                        android:text="保存"
+                        android:textColor="#D1EEEE" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--第二个布局-->
+            <LinearLayout
+                android:id="@+id/osd_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="车辆信息"
+                        android:textColor="#ff999999"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_VehicleLicence"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="车牌号"
+                        android:textColor="#D1EEEE"
+                        android:textSize="28dp" />
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_VehicleColor"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="车身颜色"
+                        android:textColor="#D1EEEE"
+                        android:textSize="28dp" />
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_VehicleStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="车型"
+                        android:textColor="#D1EEEE"
+                        android:visibility="invisible"
+                        android:textSize="28dp" />
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_PlateLength"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="车长"
+                        android:textColor="#D1EEEE"
+                        android:textSize="28dp"
+                        android:visibility="invisible" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="违法信息"
+                        android:textColor="#ff999999"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_STime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="抓拍时间"
+                        android:textColor="#D1EEEE"
+                        android:textSize="28dp" />
+                    <CheckBox
+                        android:id="@+id/osd_CB_SecurityCode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="防伪码"
+                        android:textColor="#D1EEEE"
+                        android:textSize="28dp" />
+                    <CheckBox
+                        android:id="@+id/osd_CB_SpeedCar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="车速"
+                        android:textColor="#D1EEEE"
+                        android:textSize="28dp" />
+                    <CheckBox
+                        android:id="@+id/osd_CB_Speed"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="限速"
+                        android:textColor="#D1EEEE"
+                        android:textSize="28dp" />
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_SpeedLimit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="超速比"
+                        android:textColor="#D1EEEE"
+                        android:textSize="28dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/osd_CB_Lane"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:visibility="gone"
+                        android:text="车道行驶方向"
+                        android:textColor="#D1EEEE"
+                        android:textSize="28dp" />
+                    <CheckBox
+                        android:id="@+id/osd_CB_IllegalCode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="违法代码"
+                        android:textColor="#D1EEEE"
+                        android:textSize="28dp" />
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_IllegalBehavior"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="违法行为"
+                        android:textColor="#D1EEEE"
+
+                        android:textSize="28dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:visibility="invisible"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="其他信息"
+                        android:textColor="#ff999999"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_TrackNum"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="车道号"
+                        android:textColor="#D1EEEE"
+                        android:visibility="gone"
+                        android:textSize="28dp" />
+
+
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_SnapshotNum"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:button="@drawable/checkbox_style"
+                        android:text="抓拍编号"
+                        android:textColor="#D1EEEE"
+                        android:visibility="invisible"
+                        android:textSize="28dp"
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5" />
+            </LinearLayout>
+            <!--第三个布局-->
+            <LinearLayout
+                android:id="@+id/osd_tab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_VideoName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:button="@drawable/checkbox_style"
+                        android:text="显示通道名称"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/osd_Edit_VideoName"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_CB_VideoDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="显示日期"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:id="@+id/layout_VideoDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="120dp"
+                    android:background="#424242"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:id="@+id/osd_tv"
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="时间格式"
+                            android:textColor="#D2D2D2"
+                            android:textSize="25dp" />
+
+                        <Spinner
+                            android:id="@+id/osd_ed_videoTime"
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toRightOf="@+id/osd_tv"
+                            android:background="@android:drawable/edit_text"
+                            android:paddingLeft="20dp" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/osd_ed_videoTime"
+                            android:layout_alignRight="@+id/osd_ed_videoTime"
+                            android:layout_alignTop="@+id/osd_ed_videoTime"
+                            android:background="@android:drawable/edit_text"
+                            android:src="@mipmap/spinner_icon" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#55ffffff" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:id="@+id/osd_tv0"
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="日期格式"
+                            android:textColor="#D2D2D2"
+                            android:textSize="25dp" />
+
+                        <Spinner
+                            android:id="@+id/osd_ed_videoDate"
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toRightOf="@+id/osd_tv0"
+                            android:background="@android:drawable/edit_text"
+                            android:paddingLeft="20dp" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/osd_ed_videoDate"
+                            android:layout_alignRight="@+id/osd_ed_videoDate"
+                            android:layout_alignTop="@+id/osd_ed_videoDate"
+                            android:background="@android:drawable/edit_text"
+                            android:src="@mipmap/spinner_icon" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#55ffffff" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/osd_CB_VideoWeek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:button="@drawable/checkbox_style"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="显示星期"
+                            android:textColor="#D2D2D2"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_show1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="显示项1"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/osd_show1EditText"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="123" />
+
+                    <CheckBox
+                        android:id="@+id/osd_show2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="350dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="显示项2"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/osd_show2EditText"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osd_show3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="显示项3"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/osd_show3EditText"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+
+                    <CheckBox
+                        android:id="@+id/osd_show4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="350dp"
+                        android:button="@drawable/checkbox_style"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="显示项4"
+                        android:textColor="#D2D2D2"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/osd_show4EditText"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#55ffffff" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/osd_Video_Save"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/button_selector"
+                        android:text="保存"
+                        android:textColor="#D1EEEE" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+    </LinearLayout>
+</TabHost>

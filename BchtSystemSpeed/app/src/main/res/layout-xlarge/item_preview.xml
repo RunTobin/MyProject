@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/filenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_marginLeft="20dp"
+        android:textSize="28dp"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:text="图片名称"
+        android:id="@+id/tv_scene_name"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:layout_weight="0.7"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center|left"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_weight="0.3"
+        />
+</LinearLayout>

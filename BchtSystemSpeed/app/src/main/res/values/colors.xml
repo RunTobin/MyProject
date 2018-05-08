@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="light_gray">#e7e5e5</color>
+    <color name="transparent">#00000000</color><!-- 透明 -->
+    <color name="semi_transparent">#55ffffff</color><!-- 半透明 -->
+    <color name="black">#ff323232</color><!-- 黑色 -->
+    <color name="igray">#ffF2F2F2</color><!-- 用于页面背景 -->
+    <color name="darkblue">#ff7CA0CE</color><!-- actionbar背景 ,即是所有标题栏背景 主题色 -->
+    <color name="white">#ffffffff</color><!-- 白色 -->
+    <color name="red">#ffff0000</color><!-- 红色 -->
+    <color name="blue">#ff0288ce</color><!-- 红色 -->
+    <color name="igray_et">#ff999999</color><!-- 辅助文字-->
+    <color name="Orange">#F5A100</color><!-- 橙色 -->
+    <color name="dark_grey">#D2D2D2</color><!-- 深灰 -->
+    <color name="wxnavpage">#FFE1E8EB</color>
+    <color name="color12">#7AD6BF</color>
+    <color name="color13">#9BECD9</color>
+    <color name="color16">#F9974E</color>
+    <color name="color11">#59B29C</color>
+    <color name="gray">#a6a4a4</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="drey">#2F4F4F</color>
+    <color name="grey">#424242</color>
+    <color name="tabwidget_selected">#ff2222</color>
+    <color name="font">#D1EEEE</color>
+</resources>

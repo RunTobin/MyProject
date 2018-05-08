@@ -1,0 +1,224 @@
+<resources>
+    <string name="app_name">视频雷达测速系统</string>
+    <string-array name="province">
+        <item>京</item>
+        <item>沪</item>
+        <item>津</item>
+        <item>渝</item>
+        <item>黑</item>
+        <item>吉</item>
+        <item>辽</item>
+        <item>蒙</item>
+        <item>冀</item>
+        <item>新</item>
+        <item>甘</item>
+        <item>青</item>
+        <item>陕</item>
+        <item>宁</item>
+        <item>豫</item>
+        <item>鲁</item>
+        <item>晋</item>
+        <item>皖</item>
+        <item>鄂</item>
+        <item>湘</item>
+        <item>苏</item>
+        <item>川</item>
+        <item>黔</item>
+        <item>滇</item>
+        <item>桂</item>
+        <item>藏</item>
+        <item>浙</item>
+        <item>赣</item>
+        <item>粤</item>
+        <item>闽</item>
+        <item>台</item>
+        <item>琼</item>
+        <item>港</item>
+        <item>澳</item>
+    </string-array>
+    <string-array name="mode">
+        <item>卡口RS485雷达</item>
+        <item>卡口混合车道</item>
+    </string-array>
+
+    <string-array name="color">
+        <item>红</item>
+        <item>黄</item>
+        <item>橙</item>
+        <item>绿</item>
+        <item>青</item>
+        <item>蓝</item>
+        <item>紫</item>
+    </string-array>
+
+    <string-array name="eq">
+        <item>U盘</item>
+    </string-array>
+    <!--视频帧数、连拍张数-->
+    <string-array name="capture">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!--图片检索生效项-->
+    <string-array name="TrafficType">
+        <item>车牌号码</item>
+        <item>车牌颜色</item>
+        <item>卡号</item>
+        <item>车牌类型</item>
+        <item>车辆名单类型</item>
+        <item>数据流水号</item>
+        <item>操作数</item>
+    </string-array>
+
+    <!--图片类型-->
+    <string-array name="FileType">
+        <item>定时抓图</item>
+        <item>移动侦测抓图</item>
+        <item>报警抓图</item>
+        <item>报警 或 移动侦测抓图</item>
+        <item>报警 和 移动侦测抓图</item>
+        <item>手动抓图</item>
+        <item>智能图片</item>
+        <item>PIR 报警</item>
+        <item>无线报警</item>
+        <item>呼救报警</item>
+        <item>预览时截图</item>
+        <item>人脸侦测</item>
+        <item> 越界侦测</item>
+        <item>入侵区域侦测</item>
+        <item>场景变更侦测</item>
+        <item>设备本地回放时截图</item>
+        <item>智能侦测</item>
+        <item>全部类型</item>
+    </string-array>
+
+    <!--图片类型对应的id-->
+    <string-array name="FileTypeId">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>0xa</item>
+        <item>0xd</item>
+        <item>0xe</item>
+        <item>0xf</item>
+        <item>0x10</item>
+        <item>0x11</item>
+        <item>0x12</item>
+        <item>0xff</item>
+    </string-array>
+
+    <!--车辆类型-->
+    <string-array name="VehicleType">
+        <item>其他车型</item>
+        <item>小型车</item>
+        <item>大型车</item>
+        <item>客车</item>
+        <item>轿车</item>
+        <item>货车</item>
+        <item>小货车</item>
+        <item>面包车</item>
+    </string-array>
+    <!--违规类型-->
+    <string-array name="ViolateType">
+        <item>卡口图片</item>
+        <item>低速</item>
+        <item>高速</item>
+        <item>逆行</item>
+        <item>闯红灯</item>
+        <item>压车道线</item>
+        <item>不按导向</item>
+        <item>路口滞留</item>
+        <item>机占非</item>
+        <item>违法变道</item>
+        <item>不按车道</item>
+        <item>违法禁令</item>
+        <item>路口停车</item>
+        <item>绿灯停车</item>
+    </string-array>
+
+    <string-array name="osdType">
+        <item>透明，闪烁</item>
+        <item>透明，不闪烁</item>
+        <item>不透明、闪烁</item>
+        <item>不透明、不闪烁</item>
+    </string-array>
+
+    <string-array name="radarDirectionType">
+        <item>其它</item>
+        <item>从东向西</item>
+        <item>从西向东</item>
+        <item>从南到北</item>
+        <item>从北到南</item>
+        <item>从东南到西北</item>
+        <item>从西北到东南</item>
+        <item>从东北到西南</item>
+        <item>从西南到东北</item>
+    </string-array>
+
+    <string-array name="osdTime">
+        <item>24小时制</item>
+        <item>12小时制</item>
+    </string-array>
+
+    <string-array name="osdDate">
+        <item>XXXX-XX-XX 年月日</item>
+        <item>XX-XX-XXXX 月日年</item>
+        <item>XXXX年XX月XX日</item>
+        <item>XX月XX日XXXX年</item>
+        <item>XX-XX-XXXX 日月年</item>
+        <item>XX日XX月XXXX年</item>
+    </string-array>
+    <string-array name="sysUserType">
+        <item>管理员</item>
+        <item>普通用户</item>
+    </string-array>
+    <string-array name="sysColor">
+        <item>蓝色</item>
+        <item>白色</item>
+        <item>黄色</item>
+    </string-array>
+
+    <string-array name="sysAddress">
+        <item>皖</item>
+        <item>苏</item>
+        <item>浙</item>
+        <item>京</item>
+        <item>沪</item>
+        <item>津</item>
+        <item>渝</item>
+        <item>黑</item>
+        <item>吉</item>
+        <item>辽</item>
+        <item>蒙</item>
+        <item>冀</item>
+        <item>新</item>
+        <item>甘</item>
+        <item>青</item>
+        <item>陕</item>
+        <item>宁</item>
+        <item>豫</item>
+        <item>鲁</item>
+        <item>晋</item>
+        <item>鄂</item>
+        <item>湘</item>
+        <item>川</item>
+        <item>滇</item>
+        <item>桂</item>
+        <item>藏</item>
+        <item>赣</item>
+        <item>粤</item>
+        <item>闽</item>
+    </string-array>
+</resources>

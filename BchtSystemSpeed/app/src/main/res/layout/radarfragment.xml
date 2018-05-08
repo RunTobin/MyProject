@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这里是根节点布局 -->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_radar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff323232"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/Bar"
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_bg"
+            android:orientation="horizontal" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <!--第一个布局-->
+            <LinearLayout
+                android:id="@+id/radar_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.25"
+                        android:text="关联车道方向类型"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="0.2">
+
+                        <Spinner
+                            android:id="@+id/radar_LoadDirectionType"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@android:drawable/edit_text"
+                            android:gravity="center_vertical" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/radar_LoadDirectionType"
+                            android:layout_alignRight="@+id/radar_LoadDirectionType"
+                            android:layout_alignTop="@+id/radar_LoadDirectionType"
+                            android:background="@android:drawable/edit_text"
+                            android:src="@mipmap/spinner_icon" />
+                    </RelativeLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:text="抓拍次数"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="0.15">
+
+                        <Spinner
+                            android:id="@+id/radar_CaptureTimes"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@android:drawable/edit_text"
+                            android:gravity="center_vertical" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/radar_CaptureTimes"
+                            android:layout_alignRight="@+id/radar_CaptureTimes"
+                            android:layout_alignTop="@+id/radar_CaptureTimes"
+                            android:background="@android:drawable/edit_text"
+                            android:src="@mipmap/spinner_icon" />
+                    </RelativeLayout>
+
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.25"
+                        android:text="小车限高速"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_smallEt1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.2"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:text="80"
+                        android:inputType="number" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:text="大车限高速"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_BigEt1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:text="80" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.25"
+                        android:text="小车限低速"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_smallEt2"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.2"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:text="20"
+                        android:inputType="number" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:text="大车限低速"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_BigEt2"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:text="30"
+                        android:inputType="number" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.25"
+                        android:text="小车标志限速"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_smallEt3"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.2"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:text="70"
+                        android:inputType="number" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:text="大车标志限速"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_BigEt3"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:text="70"
+                        android:inputType="number" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <Button
+                        android:id="@+id/radar_LoadSave"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/button_selector"
+                        android:text="保存"
+                        android:textColor="#D1EEEE"
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--第二个布局-->
+            <LinearLayout
+                android:id="@+id/radar_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.3"
+                        android:text="道路限速(KM/H)"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_Speed"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:hint="0" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:text="硬门限"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_hardThreshold"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:hint="10"
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.3"
+                        android:text="角度"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_Angle"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:hint="26" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:text="门限系数"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_threshold"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:hint="9"
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.3"
+                        android:text="架设高度(M)"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_raderHeight"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:hint="10"
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:text="余量"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_leftSpeed"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:hint="1"
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.3"
+                        android:text="车辆校准系数"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_adjustedLaneCoefficient"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:hint="0"
+                        />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:text="车道宽度(M)"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_laneWidth"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:hint="0"
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="两车车距差值(M)"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_Interval"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:hint="0" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:text="触发模式"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:checkedButton="@+id/radar_butModeHead"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radar_butModeHead"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.075"
+                            android:background="@drawable/btn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:textColor="#D1EEEE"
+                            android:text="触头" />
+
+                        <RadioButton
+                            android:id="@+id/radar_butModeFoot"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.075"
+                            android:background="@drawable/btn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:textColor="#D1EEEE"
+                            android:text="触尾" />
+                    </RadioGroup>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="雷达到车道距离(M)"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/radar_distance"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:background="@android:drawable/edit_text"
+                        android:gravity="center_vertical"
+                        android:hint="0" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2"
+                        android:text="路况设置"
+                        android:textColor="#D1EEEE"
+                        android:textSize="20dp" />
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.15"
+                        android:checkedButton="@+id/radar_city"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radar_city"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.075"
+                            android:background="@drawable/btn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="城市" />
+
+                        <RadioButton
+                            android:id="@+id/radar_hightway"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.075"
+                            android:background="@drawable/btn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="高速" />
+                    </RadioGroup>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+                    <Button
+                        android:id="@+id/radar_Meas"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/button_selector"
+                        android:textColor="#D1EEEE"
+                        android:text="计量-模拟" />
+
+                    <Button
+                        android:id="@+id/radar_Save"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/button_selector"
+                        android:textColor="#D1EEEE"
+                        android:text="保存" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+    </LinearLayout>
+</TabHost>

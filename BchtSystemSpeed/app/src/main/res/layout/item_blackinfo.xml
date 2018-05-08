@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ff323232"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车牌颜色："
+            android:textColor="#D1EEEE"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.15">
+
+            <Spinner
+                android:id="@+id/sys_blackColor"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/sys_blackColor"
+                android:layout_alignRight="@+id/sys_blackColor"
+                android:layout_alignTop="@+id/sys_blackColor"
+                android:background="@android:drawable/edit_text"
+                android:src="@mipmap/spinner_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简称："
+            android:textColor="#D1EEEE"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.15">
+
+            <Spinner
+                android:id="@+id/sys_blackAddress"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/sys_blackAddress"
+                android:layout_alignRight="@+id/sys_blackAddress"
+                android:layout_alignTop="@+id/sys_blackAddress"
+                android:background="@android:drawable/edit_text"
+                android:src="@mipmap/spinner_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入车牌号："
+            android:textColor="#D1EEEE"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/sys_editBlackCarNum"
+            android:layout_width="300dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="@android:drawable/edit_text"
+           />
+    </LinearLayout>
+</LinearLayout>

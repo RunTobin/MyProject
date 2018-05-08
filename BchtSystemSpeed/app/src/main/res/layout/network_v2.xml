@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top|left|fill_vertical|center"
+    android:orientation="vertical"
+    android:background="#4F4F4F"
+    android:visibility="visible" >
+
+    <include
+        android:id="@+id/Bar"
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.94"
+        android:gravity="top|left|fill_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="180dp"
+            android:layout_height="fill_parent"
+            android:minWidth="100dp"
+            android:orientation="vertical"
+            android:background="#424242"
+            android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/tv_baseSetting"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_selector"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="基础设置"
+                    android:textSize="25sp"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:textColor="#D1EEEE"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_serverSetting"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_selector"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="服务器设置"
+                    android:textSize="25sp"
+                    android:visibility="visible"
+                    android:textColor="#D1EEEE"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tv_ftpSetting"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_selector"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="FTP设置"
+                    android:textSize="25sp"
+                    android:visibility="visible"
+                    android:textColor="#D1EEEE"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#55ffffff"/>
+        <!--第一个布局-基础设置-->
+        <LinearLayout
+            android:id="@+id/ll_baseSetting"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="基础设置"
+                    android:textColor="#D1EEEE"
+                    android:textSize="25sp" />
+                <Button
+                    android:id="@+id/but_restart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重启"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:width="@dimen/content_width"
+                    android:text="IP地址"
+                    android:textColor="#D1EEEE"
+                    android:paddingLeft="40dp"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/et_ipAddr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="40dp"
+                    android:hint="192.168.2.5"
+                    android:textColor="#D1EEEE"
+                    android:editable="false"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:text="子网掩码"
+                    android:textColor="#D1EEEE"
+                    android:paddingLeft="40dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_subNetMask"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="40dp"
+                    android:hint="255.255.255.0"
+                    android:textColor="#D1EEEE"
+                    android:editable="false"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:text="网关地址"
+                    android:textColor="#D1EEEE"
+                    android:paddingLeft="40dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_gateway"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="40dp"
+                    android:hint="192.168.2.1"
+                    android:textColor="#D1EEEE"
+                    android:editable="false"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:text="DNS"
+                    android:textColor="#D1EEEE"
+                    android:paddingLeft="40dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_dns"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="40dp"
+                    android:hint="DNS"
+                    android:textColor="#D1EEEE"
+                    android:editable="false"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:text="DNS1"
+                    android:textColor="#D1EEEE"
+                    android:paddingLeft="40dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_dns1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="40dp"
+                    android:hint="DNS1"
+                    android:textSize="18sp"
+                    android:textColor="#D1EEEE"
+                    android:editable="false"
+                    android:translationY="0dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="一体机设置"
+                    android:textColor="#D1EEEE"
+                    android:textSize="25sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="一体机IP地址"
+                    android:textColor="#D1EEEE"
+                    android:paddingLeft="40dp"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/et_YiTiIP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="40dp"
+                    android:hint="192.168.1.64"
+                    android:editable="false"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--第二个布局-服务器设置-->
+        <LinearLayout
+            android:id="@+id/ll_serverSetting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/layout_marginleft"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:text="服务器设置"
+                    android:textColor="#D1EEEE"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_server"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="启用"
+                    android:textColor="#D1EEEE"
+                    android:button="@drawable/checkbox_style"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="服务器IP地址"
+                    android:textColor="#D1EEEE"
+                    android:paddingLeft="40dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_serverIP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="40dp"
+                    android:textColor="#D1EEEE"
+                    android:editable="false"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="用户名"
+                    android:textColor="#D1EEEE"
+                    android:paddingLeft="40dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_serverAccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="40dp"
+                    android:textColor="#D1EEEE"
+                    android:editable="false"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="密码"
+                    android:textColor="#D1EEEE"
+                    android:paddingLeft="40dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_serverPwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="40dp"
+                    android:textColor="#D1EEEE"
+                    android:editable="false"
+                    android:password="true"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="端口号"
+                    android:textColor="#D1EEEE"
+                    android:paddingLeft="40dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_serverPort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="40dp"
+                    android:textColor="#D1EEEE"
+                    android:editable="false"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+        </LinearLayout>
+        <!--第三个布局-FTP设置-->
+        <LinearLayout
+            android:id="@+id/ll_ftpSetting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/layout_marginleft"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:width="@dimen/content_width"
+                    android:gravity="bottom"
+                    android:text="FTP设置"
+                    android:textColor="#D1EEEE"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_networkFTP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/content_marginleft"
+                    android:text="启用"
+                    android:textColor="#D1EEEE"
+                    android:button="@drawable/checkbox_style"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:text="服务器IP地址"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_ftpIP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/content_marginleft"
+                    android:editable="false"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:width="@dimen/content_width"
+                    android:gravity="bottom"
+                    android:text="端口"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_ftpPort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/content_marginleft"
+                    android:editable="false"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:width="@dimen/content_width"
+                    android:gravity="bottom"
+                    android:text="登录名"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_ftpAccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/content_marginleft"
+                    android:editable="false"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:width="@dimen/content_width"
+                    android:gravity="bottom"
+                    android:text="密码"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_ftpPwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/content_marginleft"
+                    android:password="true"
+                    android:editable="false"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:width="@dimen/content_width"
+                    android:gravity="bottom"
+                    android:text="存储路径"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_ftpPath"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/content_marginleft"
+                    android:editable="false"
+                    android:textColor="#D1EEEE"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#55ffffff"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
