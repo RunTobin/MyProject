@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/backgroud"> 
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"        
+        android:background="@drawable/background_image"
+		android:padding="10dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+	            <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:padding="10dp"
+		            android:background="@drawable/background_white_corner"
+		            android:orientation="vertical" >
+	
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="15dp"
+	                android:text="@string/txtDeviceSetting"
+	                android:textSize="20sp"
+	                android:textColor="#000000" />
+	            
+				<ImageView
+				    android:layout_width="fill_parent" 
+				    android:layout_height="0.1dp"
+				    android:background="#DDDDDD"/>
+		
+				<ImageView
+				    android:layout_marginBottom="15dp"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="0.7dp"
+				    android:background="#EEEEEE"/>	 	            
+	            
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="2"
+	                    android:gravity="center_vertical"
+	                    android:textColor="#333333"
+	                    android:text="@string/txtUID" />
+	
+	                <EditText
+	                    android:id="@+id/edtUID"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="1"
+	                    android:capitalize="characters"
+	                    android:maxLength="20"
+	                    android:singleLine="true" />
+	                
+	            </LinearLayout>
+
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="2" />
+	
+	                <LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="1" >
+	
+	                    <Button
+	                        android:id="@+id/btnScan"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="fill_parent"
+	                        android:layout_weight="1"
+	                        android:text="@string/btnScan" />
+	
+	                    <Button
+	                        android:id="@+id/btnSearch"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="fill_parent"
+	                        android:layout_weight="1"
+	                        android:text="@string/btnSearch" />
+	                    
+	                </LinearLayout>
+	                
+	            </LinearLayout>
+	
+				<ImageView
+				    android:layout_marginTop="10dp"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="0.1dp"
+				    android:background="#DDDDDD"/>
+		
+				<ImageView
+				    android:layout_marginBottom="15dp"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="0.7dp"
+				    android:background="#EEEEEE"/>	  
+				    	                
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="2"
+	                    android:gravity="center_vertical"
+	                    android:textColor="#333333"
+	                    android:text="@string/txtSecurityCode" />
+	
+	                <EditText
+	                    android:id="@+id/edtSecurityCode"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="1"
+	                    android:capitalize="characters"
+	                    android:inputType="textPassword"
+	                    android:singleLine="true" />
+	            </LinearLayout>
+	
+				<ImageView
+				    android:layout_marginTop="10dp"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="0.1dp"
+				    android:background="#DDDDDD"/>
+		
+				<ImageView
+				    android:layout_marginBottom="15dp"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="0.7dp"
+				    android:background="#EEEEEE"/>	 
+				    	                
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="2"
+	                    android:gravity="center_vertical"
+	                    android:textColor="#333333"
+	                    android:text="@string/txtName"/>
+	 
+	                <EditText
+	                    android:id="@+id/edtNickName"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="1"
+	                    android:capitalize="characters"
+	                    android:singleLine="true"
+	                    android:text="Camera" />
+	                
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+	        
+    	</LinearLayout>
+    	
+    </ScrollView>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"        
+        android:gravity="center_vertical"
+        android:background="@drawable/background_silver">
+        
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:text="@string/ok"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/cancel"/>
+
+    </LinearLayout>
+</LinearLayout>

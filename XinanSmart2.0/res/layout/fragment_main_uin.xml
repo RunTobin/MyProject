@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="区域："
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <GridView
+            android:id="@+id/gridview_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3" >
+        </GridView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="场景："
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <GridView
+            android:id="@+id/gridview_scence"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3" >
+        </GridView>
+    </RelativeLayout>
+ <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            
+            >
+	        <Button 
+	            android:layout_width="fill_parent"
+	        
+	            android:layout_height="40.0dip"
+	            android:background="@drawable/shape"
+	            android:text="+ 添加区域或场景"
+	            android:gravity="center"
+	            android:textColor="#000"
+	            android:id="@+id/btn_main_add"
+	            />
+       </LinearLayout>
+    
+
+</LinearLayout>

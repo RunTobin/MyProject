@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">智慧控制平台</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- General -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="none">None</string>
+    <string name="close">Close</string>
+    <string name="ignore">Ignore</string>
+    <!-- vresion update -->
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">有新版本咯，快来体验吧!</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <!-- dialog title -->
+    <string name="dialog_AboutMe">About me</string>
+    <string name="dialog_AddCamera">Add Camera</string>
+    <string name="dialog_EditCamera">Edit Camera</string>
+    <string name="dialog_AdvancedSetting">Advanced Setting</string>
+    <string name="dialog_LanSearch">Search camera from LAN</string>
+    <string name="dialog_EventSearch">Search Event</string>
+    <string name="dialog_FormatSDCard">Format SDCard</string>
+    <string name="dialog_LiveView">Live View</string>
+    <string name="dialog_Playback">Playback</string>
+    <string name="dialog_Exit">Exit?</string>
+
+    <!-- Main page -->
+    <string name="ctxReconnect">Reconnect</string>
+    <string name="ctxEditCamera">Edit Camera</string>
+    <string name="ctxViewEvent">View Event</string>
+    <string name="ctxViewSnapshot">View Snapshot</string>
+    <string name="ctxRemoveCamera">Remove Camera</string>
+    <string name="optAddCamera">Add</string>
+    <string name="optAbout">About</string>
+    <string name="optExplain">Explanation</string>
+    <string name="optExit">Exit</string>
+    <string name="lstClickToAddCamera">Click here to add camera</string>
+    <string name="btnExit">Exit</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnRunInBackground">Background</string>
+    <string name="Delete_All_Photos">Delete all photos</string>
+
+    <!-- About page -->
+    <string name="txtCopyRightInfo">Copyright 2013 All rights reserved.</string>
+
+    <!-- Add camera page -->
+    <string name="txtName">Name:</string>
+    <string name="txtAddCamera">Add Camera</string>
+    <string name="txtUID">UID:</string>
+    <string name="txtSecurityCode">Security Code:</string>
+    <string name="btnScan">Scan</string>
+    <string name="btnSearch">Search</string>
+
+    <!-- Edit camera page -->
+    <string name="txtDeviceSetting">Device Setting</string>
+    <string name="txtAdvancedSetting">Advanced Setting</string>
+    <string name="btnAdvanced">Advanced</string>
+
+    <!-- Modify security code page -->
+    <string name="txtOldPassword">Old:</string>
+    <string name="txtNewPassword">New:</string>
+    <string name="txtConfirmPassword">Confirm:</string>
+
+    <!-- Live View page -->
+    <string name="txtFPS">FPS:</string>
+    <string name="txtBPS">bps:</string>
+    <string name="txtOnlineNumber">Online:</string>
+    <string name="txtFrameRatio">Rcv:</string>
+    <string name="txtTurnOffAudio">Turn off Audio</string>
+    <string name="txtTurnOnSpeaker">Speaker</string>
+    <string name="txtTurnOnMicrophone">Microphone</string>
+    <string name="txtAudioOff">Audio Off</string>
+    <string name="txtSpeaker">Speaker</string>
+    <string name="txtMicrophone">Microphone</string>
+    <string name="txtMute">Mute</string>
+    <string name="txtListen">Listen</string>
+    <string name="txtListening">Listening</string>
+    <string name="txtSpeak">Speak</string>
+    <string name="txtSpeaking">Speaking</string>
+    <string name="txtQuality">Quality:</string>
+    <string name="txtGood">Good</string>
+    <string name="txtNormal">Normal</string>
+    <string name="txtBad">Bad</string>
+
+    <!-- Event playback page -->
+    <string name="txtEventType">Event type:</string>
+    <string name="txtEventTime">Event time:</string>
+
+    <!-- Event list page -->
+    <string name="txtSearchEventDuration">Search event from:</string>
+    <string name="pull_to_refresh">Pull down to refresh</string>
+    <string name="release_to_refresh">release to refresh</string>
+    <string name="refreshing">Refreshing...</string>
+
+    <!-- Event search page -->
+    <string name="txtSearchEventFrom">From</string>
+    <string name="txtSearchEventTo">To</string>
+    <string name="txtSearchEventType">Event</string>
+    <string name="txtLoadEventList">Loading&#8230;</string>
+    <string name="txtNoResultFound">No result found.</string>
+
+    <!-- LAN search page -->
+    <string name="btnRefresh">Refresh</string>
+
+    <!-- Format SDCard page -->
+    <string name="btnFormat">Format</string>
+    <string name="txtFormatSDCardTitle">Detect an Unrecognizable SDCard!</string>
+    <string name="txtFormatSDCardDesc">You may choose to format the SDCard or it could not be use. Format command will ERASE all data of your SDCard.</string>
+    <string name="chbShowTipsFormatSDCard">Show tips when detect an unrecognizable card.</string>
+
+    <!-- No connection page -->
+    <string name="txtNoNetworkConnection">No Connection</string>
+    <string name="txtCameraOffline">Camera offline</string>
+    <string name="btnRetry">Retry</string>
+
+    <!-- No photos page -->
+    <string name="txtNoPhotos">No Photos</string>
+    <string name="txtNoPhotosDetail">This album contains no photos.</string>
+
+    <!-- IOTCAPIs -->
+    <string name="IOTC_ER_NOT_INITIALIZED">IOTC initialize failed</string>
+    <string name="IOTC_ER_CONNECT_IS_CALLING">IOTC_Connect_ByXX() is calling</string>
+    <string name="IOTC_ER_FAIL_RESOLVE_HOSTNAME">Can\'t resolved server\'s domain name</string>
+    <string name="IOTC_ER_SERVER_NOT_RESPONSE">Server not response</string>
+    <string name="IOTC_ER_FAIL_GET_LOCAL_IP">Can\'t Get local IP</string>
+    <string name="IOTC_ER_UNLICENSE">UID is not registered</string>
+    <string name="IOTC_ER_EXCEED_MAX_SESSION">Exceed the max session number</string>
+    <string name="IOTC_ER_TIMEOUT">Timeout</string>
+    <string name="IOTC_ER_DEVICE_NOT_LISTENING">The device is not on listening</string>
+    <string name="IOTC_ER_CAN_NOT_FIND_DEVICE">Can\'t not found device</string>
+
+    <!-- AVAPIs -->
+    <string name="AV_ER_INVALID_ARG">Invalid session ID</string>
+    <string name="AV_ER_EXCEED_MAX_SESSION">Exceed the max session number</string>
+    <string name="AV_ER_FAIL_CREATE_THREAD">Failed to create thread</string>
+    <string name="AV_ER_SERV_NO_RESPONSE">Server not response</string>
+    <string name="AV_ER_TIMEOUT">Timeout</string>
+    <string name="AV_ER_SESSION_CLOSE_BY_REMOTE">Remote site closed this session</string>
+    <string name="AV_ER_REMOTE_TIMEOUT_DISCONNECT">Session is disconnected because timeout</string>
+    <string name="AV_ER_INVALID_SID">Session ID was invalid</string>
+
+    <!-- Connection Status -->
+    <string name="connstus_connecting">Connecting&#8230;</string>
+    <string name="connstus_connected">Online</string>
+    <string name="connstus_disconnect">Offline</string>
+    <string name="connstus_unknown_device">Unknown Device</string>
+    <string name="connstus_connection_failed">Connection failed</string>
+    <string name="connstus_wrong_password">Wrong Password</string>
+    <string name="connection_timeout">Connection Timeout</string>
+
+    <!-- Connection Mode -->
+    <string name="connmode_p2p">P2P</string>
+    <string name="connmode_relay">Relay</string>
+    <string name="connmode_lan">LAN</string>
+    <string name="connmode_none">None</string>
+
+    <!-- Event type -->
+    <string name="evttype_all">All</string>
+    <string name="evttype_motion_detection">Motion Detection</string>
+    <string name="evttype_video_lost">Video Lost</string>
+    <string name="evttype_io_alarm">IO Alarm</string>
+    <string name="evttype_motion_pass">Motion Pass</string>
+    <string name="evttype_video_resume">Video Resume</string>
+    <string name="evttype_io_alarm_pass">IO Alarm Pass</string>
+    <string name="evttype_expt_reboot">System reboot</string>
+    <string name="evttype_sd_fault">SDCard Fault</string>
+    <string name="evttype_fulltime_recording">Full-time recording</string>
+
+    <!-- Tips -->
+    <string name="tips_warning">Warning</string>
+    <string name="tips_add_camera_ok">Add camera successfully.</string>
+    <string name="tips_edit_camera_ok">Edit camera successfully.</string>
+    <string name="tips_remove_camera_ok">Remove camera successfully.</string>
+    <string name="tips_add_camera_duplicated">This camera already exists, please enter another one.</string>
+    <string name="tips_camera_name">[Camera name] must be entered.</string>
+    <string name="tips_dev_uid">[UID] is not entered.</string>
+    <string name="tips_dev_uid_not">[UID] is not existed.</string>
+    <string name="tips_dev_uid_character">[UID] must be typed in 20 characters.</string>
+    <string name="tips_dev_security_code">[Security Code] is not entered.</string>
+    <string name="tips_remove_camera_confirm">Are you sure you want to remove this camera?</string>
+    <string name="tips_snapshot_ok">Snapshot successfully.</string>
+    <string name="tips_snapshot_failed">Snapshot was failed.</string>
+    <string name="tips_all_field_can_not_empty">All fields can not be empty.</string>
+    <string name="tips_old_password_is_wrong">The old password is wrong.</string>
+    <string name="tips_new_passwords_do_not_match">New passwords do not match.</string>
+    <string name="tips_modify_security_code_ok">Modify security code successfully, and it will reconnect later.</string>
+    <string name="tips_wifi_retrieving">Retrieving&#8230;</string>
+    <string name="tips_wifi_connecting">Connecting&#8230;</string>
+    <string name="tips_wifi_connected">Connected</string>
+    <string name="tips_wifi_disconnect">Disconnect</string>
+    <string name="tips_wifi_remote_device_timeout">Remote device no response</string>
+    <string name="tips_wifi_remote_device_connecting">connection remote device connecting</string>
+    <string name="tips_wifi_wrongpassword">Wrong password</string>
+    <string name="tips_wifi_ready">Ready</string>
+    <string name="tips_wifi_weak_signal">Connected (Weak Signal)</string>
+    <string name="tips_wifi_connect_failed">Unable to connect to the network.</string>
+    <string name="tips_no_barcode_scanner">No Barcode scanner found in your device, do you want to download now?</string>
+    <string name="tips_no_sdcard">No SDCard found in your device.</string>
+    <string name="tips_search_event_no_result">No result found.</string>
+    <string name="tips_play_record_failed">Play record failed.</string>
+    <string name="tips_play_record_end">The video has finished playing.</string>
+    <string name="tips_play_record_timeout">Can not found remote record.</string>
+    <string name="tips_search_within_an_hour">Within an hour</string>
+    <string name="tips_search_within_half_a_day">Within half a day</string>
+    <string name="tips_search_within_a_day">Within a day</string>
+    <string name="tips_search_within_a_week">Within a week</string>
+    <string name="tips_search_custom">Custom</string>
+    <string name="tips_format_sdcard_confirm">Format command will ERASE all data of SDCard, Continue?</string>
+    <string name="tips_format_sdcard_success">Format SDCard success.</string>
+    <string name="tips_format_sdcard_failed">Format SDCard failed.</string>
+    <string name="tips_no_snapshot_found">No snapshot found.</string>
+
+    <!-- Notification -->
+    <string name="ntfAppRunning">%s is running&#8230;</string>
+    <string name="ntfIncomingEvent">Incoming event from %s</string>
+    <string name="ntfIncomingMultipleEvent">Incoming event in %d cameras.</string>
+    <string name="ntfCameraRunning">Running with %d camera(s).</string>
+    <string name="ntfLastEventIs">Last event is %s.</string>
+    <string name="ntfLastEventFrom">Last event from %s.</string>
+
+    <!-- Image Description -->
+    <string name="imgDesc_EventDetail">View Event Detail</string>
+    <string name="imgDesc_NoPhotos">No Photos</string>
+
+    <!-- Snapshot Gallery -->
+    <!-- Delete Snapshot -->
+    <string name="dlgAreYouSureToDeleteThisSnapshot">Are you sure to delete this snapshot?</string>
+    <string name="dlgDeleteSnapshotYes">Yes</string>
+    <string name="dlgDeleteSnapshotNo">No</string>
+    <string name="dlgAreYouSureToDeleteAllSnapshot">Are you sure to delete all snapshots?</string>
+    <string name="tips_dev_uid_special_characters">[UID] Must be 1-9 or A-Z</string>
+    <string name="tv_addweb_name">名    称 :</string>
+    <string name="tv_addweb_serAddress">服务器地址 :</string>
+    <string name="xinan">www.xinanrf.com</string>
+    <string name="tv_addweb_linktip">链 接 类 型 :</string>
+    <string name="text_web">互联网</string>
+    <string name="text_loginUser">登 陆 用 户 :</string>
+    <string name="text_loginPWD">登 陆 密 码 :</string>
+    <string name="text_uodateTime">设备状态更新周期:</string>
+    <string name="text_unit">(秒/次)</string>
+    <string name="text_ok_add">确认添加</string>
+    <string name="text_dis">取消</string>
+    <string name="txt_edit_OK">确定</string>
+    <string name="txt_txtd">通信通道</string>
+    <string name="txt_addmode">+ 新增应用场景</string>
+    <string name="txt_dinnertime">晚餐时间</string>
+
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+    <item name="tag_zero" type="id"></item>
+  
+</resources>

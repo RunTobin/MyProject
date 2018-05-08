@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  	
+  	<!-- QR code scanner --> 
+  	<color name="viewfinder_mask">#60000000</color>
+  	<color name="result_view">#b0000000</color>
+  	<color name="viewfinder_frame">#ff000000</color>
+  	<color name="viewfinder_laser">#ffff0000</color>
+  	<color name="possible_result_points">#c0ffff00</color>  
+  	<color name="color_btn_select">#aabbcc</color>
+    <color name="backgroud">#ffffff</color>
+  	
+      <color name="colorPrimary">#fd5e5e</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#979595</color>
+
+
+    <color name="buttonPrimary">#f0e7e1</color>
+    <color name="buttonPrimaryDark">@color/colorPrimary</color>
+    <color name="buttonTextColor">#918378</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="titlePrimary">#6cf0e7e1</color>
+    <color name="gray">#a6a4a4</color>
+    <color name="gray1">#CCCCCC</color>
+    <color name="text">#998f86</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="red">#ed3232</color>
+    <color name="redDark">#c12626</color>
+    <color name="redLight">#ff6464</color>
+    <color name="light_gray">#e7e5e5</color>
+    <color name="text_dark">#ddd1c5</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="white">#ffffff</color>
+    
+     <color name="cameralist_gray">#e3e3e3</color>
+     <color name="transparent">#00ffffff</color>
+</resources>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="区域名：" />
+
+        <EditText
+            android:id="@+id/editlocation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="请填写区域名"
+            android:paddingRight="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="请选择区域图:"
+        android:textColor="@color/text"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp" >
+
+                    <View
+                        android:id="@+id/background1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@color/red" />
+
+                    <ImageView
+                        android:id="@+id/myActivity"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="客厅" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp" >
+
+                    <View
+                        android:id="@+id/background2"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@color/red"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/myFollow"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="卧室" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp" >
+
+                    <View
+                        android:id="@+id/background3"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@color/red"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/myWallet"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="厨房" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp" >
+
+                    <View
+                        android:id="@+id/background4"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@color/red"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/myScroll"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="厕所" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp" >
+
+                    <View
+                        android:id="@+id/background5"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@color/red"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/myEnroll"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="书房" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp" >
+
+                    <View
+                        android:id="@+id/background6"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@color/red"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/myShare"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="办公室" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:text="你选择的区域是：" />
+
+        <TextView
+            android:id="@+id/text_get_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:text="客厅" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:padding="2.0dip"
+            android:text="取消"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:padding="2.0dip"
+            android:text="下一步"
+            android:textColor="#000" />
+    </LinearLayout>
+
+</LinearLayout>

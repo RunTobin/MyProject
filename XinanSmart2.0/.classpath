@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="libs/gson-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="G:/XinanSmart2.0/XinanSmart2.0/libs/EZOpenSDK.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="lib" path="libs/gson-2.1-javadoc.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/gson-2.1-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/iotcamera.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/ormlite-core-4.48.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/ormlite-android-4.48.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/universal-image-loader-1.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/zxing.jar"/>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

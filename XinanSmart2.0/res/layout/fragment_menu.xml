@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#000" 
+         >
+    </ListView>
+    
+   <RelativeLayout
+        android:id="@+id/relative_add_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/add_web_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/img_add_web" />
+
+        <TextView
+            android:id="@+id/text_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/add_web_image"
+            android:background="@drawable/menu_selector"
+            android:text="添加网关"
+            android:textColor="#aabbcc"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relative_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/guide_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/img_guide" />
+
+        <TextView
+            android:id="@+id/text_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/guide_image"
+            android:background="@drawable/menu_selector"
+            android:text="使用指南"
+            android:textColor="#aabbcc"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/about_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/img_about" />
+
+        <TextView
+            android:id="@+id/text_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/about_image"
+            android:background="@drawable/menu_selector"
+            android:text="关  于"
+            android:textColor="#aabbcc"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

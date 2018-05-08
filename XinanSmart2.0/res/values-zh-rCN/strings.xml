@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="none">无</string>
+    <string name="close">关闭</string>    
+    <string name="ignore">忽略</string>
+        
+    <!-- dialog title -->
+    <string name="dialog_AboutMe">关于</string>
+    <string name="dialog_AddCamera">增加摄像机</string>
+    <string name="dialog_EditCamera">修改摄像机</string>
+    <string name="dialog_AdvancedSetting">高级设置</string>
+    <string name="dialog_LanSearch">内网搜索</string>
+    <string name="dialog_EventSearch">事件搜索</string>
+    <string name="dialog_FormatSDCard">格式化 SDCard</string>
+    <string name="dialog_LiveView">实时影像</string>
+    <string name="dialog_Playback">录像回放</string>
+    <string name="dialog_Exit">确定退出吗？</string>
+    
+    <!-- Main page -->
+    <string name="ctxReconnect">重新连接</string>
+    <string name="ctxEditCamera">修改摄像机</string>
+    <string name="ctxViewEvent">查看事件</string>
+    <string name="ctxViewSnapshot">查看快照</string>
+    <string name="ctxRemoveCamera">删除摄像机</string>
+    <string name="optAddCamera">增加摄像机</string>
+    <string name="optAbout">关于</string>
+    <string name="optExplain">说明</string>
+    <string name="optExit">退出</string>
+    <string name="lstClickToAddCamera">请按此新增摄像机</string>
+    <string name="btnExit">退出</string>
+    <string name="btnCancel">取消</string>
+    <string name="btnRunInBackground">背景执行</string>
+    <string name="Delete_All_Photos">删除所有照片</string>
+    
+    
+    <!-- About page -->
+    <string name="txtCopyRightInfo">Copyright 2013 All rights reserved.</string>
+    
+    <!-- Add camera page -->
+    <string name="txtName">名称:</string>
+    <string name="txtAddCamera">增加摄像机</string>
+    <string name="txtUID">UID:</string>
+    <string name="txtSecurityCode">密码:</string>
+	<string name="btnScan">扫描条码</string>
+	<string name="btnSearch">搜索</string>
+		    
+    <!-- Edit camera page -->
+	<string name="txtDeviceSetting">设备设置</string>
+	<string name="txtAdvancedSetting">高级设置</string>
+	<string name="btnAdvanced">设置</string>
+	
+	<!-- Modify security code page -->
+	<string name="txtOldPassword">旧密码:</string>
+	<string name="txtNewPassword">新密码:</string>
+	<string name="txtConfirmPassword">新密码确认:</string>
+	
+	<!-- Live View page -->
+	<string name="txtFPS">FPS:</string>
+	<string name="txtBPS">bps:</string>
+	<string name="txtOnlineNumber">在线人数:</string>
+	<string name="txtFrameRatio">掉包率:</string>
+	<string name="txtTurnOffAudio">关闭所有声音</string>
+	<string name="txtTurnOnSpeaker">开启扬声器</string>
+	<string name="txtTurnOnMicrophone">开启麦克风</string>
+	<string name="txtAudioOff">声音关闭</string>
+	<string name="txtSpeaker">扬声器</string>
+	<string name="txtMicrophone">麦克风</string>
+	<string name="txtMute">静音</string>
+	<string name="txtListen">监听</string>
+	<string name="txtListening">监听中</string>
+	<string name="txtSpeak">通话</string>
+	<string name="txtSpeaking">通话中</string>
+	<string name="txtQuality">收视状况:</string>
+	<string name="txtGood">佳</string>
+	<string name="txtNormal">普通</string>
+	<string name="txtBad">差</string>
+	
+	<!-- Event playback page -->
+	<string name="txtEventType">事件类型:</string>
+	<string name="txtEventTime">事件时间:</string>
+	
+	<!-- Event list page -->
+	<string name="txtSearchEventDuration">搜索事件区间:</string>
+	<string name="pull_to_refresh">下拉可以刷新</string>
+	<string name="release_to_refresh">釋放立即刷新</string>
+	<string name="refreshing">正在刷新...</string>
+	
+	<!-- Event search page -->
+	<string name="txtSearchEventFrom">从</string>
+	<string name="txtSearchEventTo">到</string>
+	<string name="txtSearchEventType">事件</string>
+	<string name="txtLoadEventList">读取&#8230;</string>
+	<string name="txtNoResultFound">未找到任何记录</string>
+	
+	<!-- LAN search page -->
+	<string name="btnRefresh">刷新</string>
+
+	<!-- Format SDCard page -->
+	<string name="btnFormat">格式化</string>
+	<string name="txtFormatSDCardTitle">侦测无法识别SDCard</string>
+	<string name="txtFormatSDCardDesc">必须进行格式化后方得继续使用录像功能，格式化指令将会清除SDCard内所有数据。</string>
+	<string name="chbShowTipsFormatSDCard">当侦测到无法识别SDCard时显示此讯息</string>
+		
+	<!-- No connection page -->
+	<string name="txtNoNetworkConnection">未连上网络</string> 
+	<string name="txtCameraOffline">装置脱机</string>
+	<string name="btnRetry">重试</string>
+	
+	<!-- No photos page -->
+	<string name="txtNoPhotos">空相簿</string>
+	<string name="txtNoPhotosDetail">该相簿里无任何快照</string>
+	    	    
+	<!-- IOTCAPIs -->
+	<string name="IOTC_ER_NOT_INITIALIZED">IOTC initialize failed</string>
+	<string name="IOTC_ER_CONNECT_IS_CALLING">IOTC_Connect_ByXX() is calling</string>
+	<string name="IOTC_ER_FAIL_RESOLVE_HOSTNAME">Can\'t resolved server\'s domain name</string>
+	<string name="IOTC_ER_SERVER_NOT_RESPONSE">Server not response</string>
+	<string name="IOTC_ER_FAIL_GET_LOCAL_IP">Can\'t Get local IP</string>
+	<string name="IOTC_ER_UNLICENSE">UID is not registered</string>
+	<string name="IOTC_ER_EXCEED_MAX_SESSION">Exceed the max session number</string>
+	<string name="IOTC_ER_TIMEOUT">Timeout</string>
+	<string name="IOTC_ER_DEVICE_NOT_LISTENING">The device is not on listening</string>
+	<string name="IOTC_ER_CAN_NOT_FIND_DEVICE">Can\'t not found device</string>
+	
+	<!-- AVAPIs -->
+	<string name="AV_ER_INVALID_ARG">Invalid session ID</string>
+	<string name="AV_ER_EXCEED_MAX_SESSION">Exceed the max session number</string>
+	<string name="AV_ER_FAIL_CREATE_THREAD">Failed to create thread</string>
+	<string name="AV_ER_SERV_NO_RESPONSE">Server not response</string>
+	<string name="AV_ER_TIMEOUT">Timeout</string>
+	<string name="AV_ER_SESSION_CLOSE_BY_REMOTE">Remote site closed this session</string>
+	<string name="AV_ER_REMOTE_TIMEOUT_DISCONNECT">Session is disconnected because timeout</string>
+	<string name="AV_ER_INVALID_SID">Session ID was invalid</string>	 
+		    
+	<!-- Connection Status -->
+	<string name="connstus_connecting">连接中&#8230;</string>
+	<string name="connstus_connected">在线</string>
+	<string name="connstus_disconnect">离线</string>
+	<string name="connstus_unknown_device">未知设备</string>
+	<string name="connstus_connection_failed">连接失败</string>
+	<string name="connstus_wrong_password">错误密码</string>
+	<string name="connection_timeout">连线逾时</string>
+	
+	<!-- Connection Mode -->
+	<string name="connmode_p2p">P2P</string>
+	<string name="connmode_relay">Relay</string>
+	<string name="connmode_lan">局域網</string>
+	<string name="connmode_none">无</string>
+	
+	<!-- Event type -->
+	<string name="evttype_all">全部</string>
+	<string name="evttype_motion_detection">移动侦测</string>
+	<string name="evttype_video_lost">视频中断</string>
+	<string name="evttype_io_alarm">IO 报警</string>
+	<string name="evttype_motion_pass">移动侦测</string>
+	<string name="evttype_video_resume">视频恢复</string>
+	<string name="evttype_io_alarm_pass">IO 报警</string>
+	<string name="evttype_expt_reboot">系统异常重启</string>
+	<string name="evttype_sd_fault">SD卡错误</string>
+	<string name="evttype_fulltime_recording">全时录像</string>
+
+	    
+	<!-- Tips -->
+	<string name="tips_warning">警告</string>
+	<string name="tips_add_camera_ok">成功添加摄像机。</string>
+	<string name="tips_edit_camera_ok">成功修改摄像机。</string>
+	<string name="tips_remove_camera_ok">成功删除摄像机。</string>
+	<string name="tips_add_camera_duplicated">该摄影机已存在，请输入另一个[UID]。</string>
+    <string name="tips_camera_name">请输入[摄像机名称]。</string>    
+    <string name="tips_dev_uid">请输入 [UID]。</string>
+    <string name="tips_dev_uid_not">不存在此 [UID]。</string>
+    <string name="tips_dev_uid_character">[UID] 必须输入20个字符。</string>
+    <string name="tips_dev_security_code">请输入[密码].</string>
+    <string name="tips_remove_camera_confirm">是否删除该摄像机?</string>
+    <string name="tips_snapshot_ok">成功拍照</string>
+    <string name="tips_snapshot_failed">拍照失败</string> 
+    <string name="tips_all_field_can_not_empty">请输入所有选项。</string>
+    <string name="tips_old_password_is_wrong">旧密码输入错误。</string>    
+    <string name="tips_new_passwords_do_not_match">两次输入的新密码不一致。</string>    
+    <string name="tips_modify_security_code_ok">成功修改密码.该摄像机稍后会重新连接。</string>
+    <string name="tips_wifi_retrieving">获取中&#8230;</string>   
+    <string name="tips_wifi_connecting">连接中&#8230;</string>
+    <string name="tips_wifi_connected">已连接</string>
+    <string name="tips_wifi_disconnect">未连接</string>
+	<string name="tips_wifi_remote_device_timeout">远端装置无回应</string>
+	<string name="tips_wifi_remote_device_connecting">远端装置连线中</string>
+    <string name="tips_wifi_wrongpassword">密码错误</string>
+    <string name="tips_wifi_ready">已准备</string>
+    <string name="tips_wifi_weak_signal">已连接 (讯号微弱)</string>    
+    <string name="tips_wifi_connect_failed">未连上网络.</string> 
+    <string name="tips_no_barcode_scanner">您的手机未安装条形码扫描软件，是否现在下载?</string>
+    <string name="tips_no_sdcard">您的手机未安装SD卡。</string>
+	<string name="tips_search_event_no_result">未找到任何记录。</string>
+	<string name="tips_play_record_failed">播放录像失败。</string>
+	<string name="tips_play_record_end">该录像已播放完毕。</string>
+	<string name="tips_play_record_timeout">无法获取远程录像档。</string>	
+	<string name="tips_search_within_an_hour">一小时内</string>
+	<string name="tips_search_within_half_a_day">半天内</string>
+	<string name="tips_search_within_a_day">一天内</string>
+	<string name="tips_search_within_a_week">一周内</string>
+	<string name="tips_search_custom">自定义</string>
+	<string name="tips_format_sdcard_confirm">格式化命令将于清除SDCard内所有数据，继续?</string>	
+	<string name="tips_format_sdcard_success">格式化成功</string>
+	<string name="tips_format_sdcard_failed">格式化失败</string>
+	<string name="tips_no_snapshot_found">查无快照</string>
+	
+	<!-- Notification -->
+	<string name="ntfAppRunning">%s 正在执行中&#8230;</string>
+    <string name="ntfIncomingEvent">从 %s 接收事件警示</string>
+    <string name="ntfIncomingMultipleEvent">新进事件，共 %d 摄影机</string>
+    <string name="ntfCameraRunning">摄影机联机中 (%d)</string>	    
+    <string name="ntfLastEventIs">新进事件: %s</string>
+    <string name="ntfLastEventFrom">新进事件: %s</string>	    
+    
+    <!-- Image Description -->
+    <string name="imgDesc_EventDetail">View Event Detail</string>
+    <string name="imgDesc_NoPhotos">No Photos</string>
+
+    <!-- Snapshot Gallery -->
+    <!-- Delete Snapshot -->
+    <string name="dlgAreYouSureToDeleteThisSnapshot">要删除此图片吗？</string>
+    <string name="dlgDeleteSnapshotYes">确定</string>
+    <string name="dlgDeleteSnapshotNo">取消</string>
+    <string name="dlgAreYouSureToDeleteAllSnapshot">要删除所有图片吗？</string>
+    
+    <string name="tips_dev_uid_special_characters">[UID] 必须為1~9或A~Z</string>
+    
+    
+</resources>

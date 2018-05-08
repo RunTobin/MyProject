@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 
+            <TextView
+                android:id="@+id/txtCameraName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtName"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+			-->
+			
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtEventType"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/txtEventTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999999" />
+            </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	            
+	            <TextView
+	                android:id="@+id/txtResolution"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:textColor="#000000" />	            
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=" / " />	            
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/txtFPS" />	            
+
+	            <TextView
+	                android:id="@+id/txtFrameRate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textColor="#000000" />
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=" / " />
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/txtBPS" />	            
+
+	            <TextView
+	                android:id="@+id/txtBitRate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:textColor="#000000" />	            
+
+	        </LinearLayout>	            	
+	
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/txtFrameRatio" />
+	            
+	            <TextView
+	                android:id="@+id/txtIncompleteFrameCount"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textColor="#000000" />
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=" / " />
+
+	            <TextView
+	                android:id="@+id/txtFrameCount"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:textColor="#000000" />
+
+	        </LinearLayout>	                 
+            
+        </LinearLayout>
+	        
+	</LinearLayout>
+	
+    <FrameLayout
+        android:id="@+id/monitorLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2" >
+
+       		<com.tutk.IOTC.Monitor android:id="@+android:id/monitor"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent" />
+       	
+        <!-- 
+		<com.tutk.P2PCam264.TouchedMonitor android:id="@+android:id/monitor"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent" />
+		-->
+		
+    </FrameLayout>
+
+    <!-- 
+   	<LinearLayout
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="60dp"
+   	    android:background="#FFFFFF" >
+
+   		<HorizontalScrollView
+   		    android:layout_width="0dip"
+   		    android:layout_height="fill_parent"
+   		    android:layout_weight="1" >
+
+   		    <LinearLayout
+   		        android:layout_width="0dip"
+   		        android:layout_height="fill_parent"
+   		        android:gravity="center_vertical"
+   		        android:orientation="horizontal" >
+   		        		        
+
+   		      	<ImageView
+   		            android:id="@+id/imgPlay"
+   		            android:layout_width="wrap_content"
+   		            android:layout_height="wrap_content"
+   		            android:layout_marginLeft="12dp"
+   		            android:layout_marginRight="6dp"   		            
+   		            android:src="@drawable/play" />
+   		        
+   		    </LinearLayout>
+   		    
+   		</HorizontalScrollView>
+
+   	</LinearLayout>
+	-->
+</LinearLayout>

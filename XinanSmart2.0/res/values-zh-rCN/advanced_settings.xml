@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_ModifySecurityCode">修改密码</string>
+    <string name="dialog_ManagWiFiNetworks">管理WiFi网络</string>
+    <string name="txtSecuritySetting">密码设置</string>
+    <string name="btnModifySecurityCode">修改密码</string>
+	<string name="txtVideoSetting">视频设定</string>
+	<string name="txtVideoQuality">视频质量:</string>    
+    <string name="txtVideoFlip">影像翻转:</string>
+    <string name="txtEnvironment">环境模式:</string>
+    <string name="txtWiFiSetting">WiFi设置</string>
+    <string name="txtWiFiSSID">SSID:</string>
+    <string name="txtWiFiPasssword">密码:</string>
+    <string name="txtEventSetting">事件设置</string>
+    <string name="txtMotionDetectionSetting">移动侦测:</string>
+    <string name="txtEventNotification">事件通知:</string>
+    <string name="txtRecordSetting">录像设置</string>
+    <string name="txtRecordingMode">模式:</string>
+	<string name="txtDeviceInfo">设备信息</string>
+	<string name="txtDeviceModel">型号:</string>
+	<string name="txtVenderName">制造商:</string>
+	<string name="txtDeviceVersion">版本:</string>
+	<string name="txtStorageTotalSize">存储空间大小:</string>
+	<string name="txtStorageFreeSize">可用空间大小:</string>
+	<string name="btnManageWiFiNetworks">管理WiFi网络</string>
+	<string name="tipConnectWiFiNetworkSuccess">已成功联机至无线网络.</string>
+	<string name="tipConnectWiFiNetworkFailed">无线网络无法联机.</string>
+	<string name="btnFormatSDCard">Format SDCard</string>
+	<string name="txtFormatSDCard">格式化指令将会清除SDCard内所有数据</string>
+	<string name="txtTimeZoneSetting">时区</string>
+		
+    <!-- Modify Device WiFi Password page -->
+	<string name="txtWiFiSignal">信号强度:</string>
+	<string name="txtWiFiSecurity">安全选项:</string>
+	<string name="txtWirelessPassword">密码:</string>
+	<string name="chbShowHiddenWiFiPassword">显示密码</string>
+	
+	
+</resources>

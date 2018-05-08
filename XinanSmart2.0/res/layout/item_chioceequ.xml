@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            >
+            <CheckBox 
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/cb_equChoice"
+                />
+            <ImageView 
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dengpao"
+                android:id="@+id/img_equipChoice"
+                />
+        </LinearLayout>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:text="小功率单灯控制器"
+            android:textColor="#030303"
+            android:id="@+id/tv_equipName"
+            />
+    </LinearLayout>
+
+</LinearLayout>

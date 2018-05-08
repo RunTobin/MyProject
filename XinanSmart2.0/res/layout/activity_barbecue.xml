@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/barbe_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:paddingTop="10dip"
+            android:text="剩余时间 :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txt_detaliltime"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:paddingTop="10dip"
+            android:text="0分钟"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:text="当前温度:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txt_detaliltem"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:paddingTop="10dip"
+            android:text="0度"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip" >
+
+        <CheckBox
+            android:id="@+id/barbe_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/barbe_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@id/barbe_on"
+            android:text="关 "
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/barbe_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_toRightOf="@id/barbe_off"
+            android:text="暂停 "
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/barbe_zheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/barbe_on"
+            android:text="蒸"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/barbe_kao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/barbe_off"
+            android:layout_marginLeft="40dip"
+            android:layout_toRightOf="@id/barbe_zheng"
+            android:text="烤 "
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="设定温度:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/barbe_settem"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/edit_shape"
+            android:maxLength="6"
+            android:numeric="integer"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:textColor="#000000" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="设定时间:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/barbe_settim"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/edit_shape"
+            android:numeric="integer"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/barbe_cancel"
+            android:layout_width="0dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="取消"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/barbe_ok"
+            android:layout_width="0dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

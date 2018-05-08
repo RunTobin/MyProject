@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_ModifySecurityCode">Modify Security Code</string>
+    <string name="dialog_ManagWiFiNetworks">Manage Wi-Fi networks</string>
+    <string name="txtSecuritySetting">Security Code Setting</string>
+    <string name="btnModifySecurityCode">Modify Security Code</string>
+	<string name="txtVideoSetting">Video Setting</string>
+	<string name="txtVideoQuality">Video Quality:</string>    
+    <string name="txtVideoFlip">Video Flip:</string>
+    <string name="txtEnvironment">Environment Mode:</string>
+    <string name="txtWiFiSetting">Wi-Fi Setting</string>
+    <string name="txtWiFiSSID">SSID:</string>
+    <string name="txtWiFiPasssword">Password:</string>
+    <string name="txtEventSetting">Event Setting</string>
+    <string name="txtMotionDetectionSetting">Motion Detection:</string>
+    <string name="txtEventNotification">Notification:</string>
+    <string name="txtRecordSetting">Recording Setting</string>
+    <string name="txtRecordingMode">Mode:</string>
+	<string name="txtDeviceInfo">Device Information</string>
+	<string name="txtDeviceModel">Model:</string>
+	<string name="txtVenderName">Vender:</string>
+	<string name="txtDeviceVersion">Version:</string>
+	<string name="txtStorageTotalSize">Total size:</string>
+	<string name="txtStorageFreeSize">Free size:</string>
+	<string name="btnManageWiFiNetworks">Manage Wi-Fi networks</string>
+	<string name="tipConnectWiFiNetworkSuccess">Wi-Fi network connected.</string>
+	<string name="tipConnectWiFiNetworkFailed">Failed to connect to Wi-Fi network.</string>
+	<string name="btnFormatSDCard">Format SDCard</string>
+	<string name="txtFormatSDCard">Format command will ERASE all data of SDCard.</string>
+	<string name="txtTimeZoneSetting">Time Zone</string>
+		
+    <!-- Modify Device WiFi Password page -->
+	<string name="txtWiFiSignal">Signal strength:</string>
+	<string name="txtWiFiSecurity">Security:</string>
+	<string name="txtWirelessPassword">Wireless password</string>
+	<string name="chbShowHiddenWiFiPassword">Show password.</string>
+	
+    <!-- Image Description -->
+    <string name="imgDesc_SplitLine">SplitLine</string>
+    	
+</resources>

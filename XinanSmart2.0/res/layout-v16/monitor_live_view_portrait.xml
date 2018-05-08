@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+	
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        android:background="#FFFFFF">
+        
+        <!-- 
+		<TextView
+			android:id="@+id/txtCameraName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/txtName"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:textSize="16sp" 
+			android:textStyle="bold"
+			android:textColor="#000000"/>     
+        -->
+        
+	    <LinearLayout
+            android:id="@+id/pnlCameraInfo"
+            android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginBottom="5dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        
+			<LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" 
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/txtConnectionStatus"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textColor="#000000" />
+
+	            		
+	            <TextView
+	                android:id="@+id/txtConnectionSlash"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=" / " />
+				
+				
+	            <TextView
+	                android:id="@+id/txtConnectionMode"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:textColor="#000000" />
+	
+	        </LinearLayout>	
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	            
+	            <TextView
+	                android:id="@+id/txtResolution"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:textColor="#000000" />	            
+	            
+	            <TextView
+	                android:id="@+id/txtResolutionSlash"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=" / " />	            
+	            
+	            <TextView
+	                android:id="@+id/txtShowFPS"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/txtFPS" />	            
+
+	            <TextView
+	                android:id="@+id/txtFrameRate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textColor="#000000" />
+
+	            <TextView
+	                android:id="@+id/txtFPSSlash"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=" / " />
+	            
+	            <TextView
+	                android:id="@+id/txtShowBPS"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/txtBPS" />	            
+
+	            <TextView
+	                android:id="@+id/txtBitRate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:textColor="#000000" />	            
+
+	        </LinearLayout>	            	
+	
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	            
+	          	<TextView
+	                android:id="@+id/txtShowOnlineNumber"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/txtOnlineNumber" />	            
+	            
+	            <TextView
+	                android:id="@+id/txtOnlineNumber"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textColor="#000000" />
+	            
+	            <TextView
+	                android:id="@+id/txtOnlineNumberSlash"             
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=" / " />
+
+	            <TextView
+	                android:id="@+id/txtShowFrameRatio"	                
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/txtFrameRatio" />
+	            
+	            <TextView
+	                android:id="@+id/txtIncompleteFrameCount"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textColor="#000000" />
+
+	            <TextView
+	                android:id="@+id/txtFrameCountSlash"	                
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=" / " />
+
+	            <TextView
+	                android:id="@+id/txtFrameCount"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:textColor="#000000" />
+
+	            <TextView
+	                android:id="@+id/txtQuality"	                
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/txtQuality" />
+	            
+	            <TextView
+	                android:id="@+id/txtPerformance"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:textColor="#000000" />
+
+	            <TextView
+	                android:id="@+id/txtDispFrmPreSeco"	                
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:textColor="#000000" />
+	                        
+	            <TextView
+	                android:id="@+id/txtRecvFrmSlash"	                
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text=" / " />
+	            
+				<TextView
+	                android:id="@+id/txtRecvFrmPreSec"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:textColor="#000000" />  
+
+
+
+	        </LinearLayout>	            
+	    </LinearLayout>
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="right"
+        	android:layout_marginRight="5dp"
+        	android:id="@+id/pnlButton"
+	        >
+	        
+	        <ImageButton
+	            android:id="@+id/CH_button"
+	        	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:scaleType="fitXY"
+        		android:background="@drawable/ipcam_ch"
+	            />
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2">
+ 
+        	<com.tutk.IOTC.Monitor android:id="@+android:id/monitor"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+            android:layout_gravity="center"/>
+        	
+        <!-- 
+		<com.tutk.P2PCam264.TouchedMonitor android:id="@+android:id/monitor"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent" />
+		-->
+    </LinearLayout>
+
+    <!-- 
+   	<LinearLayout
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="57dp"
+   	    android:background="#FFFFFF" >
+
+   		<HorizontalScrollView
+   		    android:layout_width="match_parent"
+   		    android:layout_height="fill_parent"
+   		    android:layout_weight="1" >
+
+   		    <LinearLayout
+   		        android:layout_width="fill_parent"
+   		        android:layout_height="fill_parent"
+   		        android:gravity="center_vertical"
+   		        android:orientation="horizontal" >
+
+   		        <ImageView
+   		            android:id="@+id/imgGallery"
+   		            android:layout_width="36dp"
+   		            android:layout_height="36dp"
+   		            android:layout_marginLeft="12dp"
+   		            android:layout_marginRight="6dp"
+   		            android:src="@drawable/album" />
+
+   		        <ImageView
+   		            android:id="@+id/imgSnapshot"
+   		            android:layout_width="wrap_content"
+   		            android:layout_height="wrap_content"
+   		            android:layout_marginLeft="6dp"
+   		            android:layout_marginRight="6dp"
+   		            android:src="@drawable/snapshot" />
+
+   		        <ImageView
+   		            android:id="@+id/imgListenIn"
+   		            android:layout_width="wrap_content"
+   		            android:layout_height="wrap_content"
+   		            android:layout_marginLeft="6dp"
+   		            android:layout_marginRight="6dp"   		            
+   		            android:src="@drawable/speaker_on" />
+        				        
+   		        <ImageView
+   		            android:id="@+id/imgSpeakOut"
+   		            android:layout_width="wrap_content"
+   		            android:layout_height="wrap_content"
+   		            android:layout_marginLeft="0dp"
+   		            android:layout_marginRight="4dp"
+   		            android:src="@drawable/mic_off" />
+   		        		        
+   		    </LinearLayout>
+   		</HorizontalScrollView>
+
+   		
+   		<ImageView
+   		    android:layout_width="0.3dp"
+   		    android:layout_height="fill_parent"
+   		    android:layout_gravity="center_vertical"
+   		    android:background="#CCCCCC" />
+   		
+   		<ImageView
+   		    android:layout_width="0.7dp"
+   		    android:layout_height="fill_parent"
+   		    android:layout_gravity="center_vertical"
+   		    android:background="#EEEEEE" />   		
+
+   		<LinearLayout
+   		    android:layout_width="60dp"
+   		    android:layout_height="fill_parent" 
+   		    android:gravity="center"
+   		    android:clickable="true"
+   		    android:background="@drawable/background_silver_light_two_state">
+   			   		    		   
+   			<ImageView
+   			    android:id="@+id/imgRevert"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:src="@drawable/revert" />
+
+   		</LinearLayout>
+		
+   	</LinearLayout>
+	-->
+</LinearLayout>

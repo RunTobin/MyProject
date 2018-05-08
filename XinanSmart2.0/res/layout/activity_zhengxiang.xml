@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+     android:background="@android:color/white"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip">
+
+        <CheckBox
+            android:id="@+id/zheng_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/zheng_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@id/zheng_on"
+            android:text="关 "
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/zheng_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_toRightOf="@id/zheng_off"
+            android:text="暂停 "
+            android:textColor="#000000" />
+
+      
+    </RelativeLayout>
+
+   
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:textColor="#000000" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="剩余时间:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/zheng_tim"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:numeric="integer"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/zheng_cancel"
+            android:layout_width="0dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="取消"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/zheng_ok"
+            android:layout_width="0dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

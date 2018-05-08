@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <Spinner
+                android:id="@+id/spinWiFiSSID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+                
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:layout_marginRight="5dp"
+                android:text="@string/txtWiFiSignal" />
+
+            <TextView
+                android:id="@+id/txtWiFiSignal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:layout_marginRight="5dp"
+                android:text="@string/txtWiFiSecurity"/>
+
+            <TextView
+                android:id="@+id/txtWiFiSecurity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+"
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtWirelessPassword"
+            android:textColor="#666666"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/edtWiFiPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"                                             
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/chbShowHiddenPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chbShowHiddenWiFiPassword" 
+            android:layout_alignParentLeft="true"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ok" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+    	<com.tutk.IOTC.Monitor android:id="@+android:id/monitor"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent" />
+    	
+    	<!-- 
+	<com.tutk.P2PCam264.TouchedMonitor android:id="@+android:id/monitor"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent" />
+	-->
+	
+	<!-- 
+	<LinearLayout
+	    android:layout_width="60dp"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:background="#FFFFFF">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center_horizontal"
+ 		    android:orientation="vertical" >
+
+		 
+			<ImageView
+				android:id="@+id/imgSnapshot"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:layout_marginBottom="6dp"
+				android:src="@drawable/snapshot" />
+
+			<ImageView
+				android:id="@+id/imgListenIn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:layout_marginBottom="6dp"   		            
+				android:src="@drawable/speaker_on" />
+        				        
+			<ImageView
+				android:id="@+id/imgSpeakOut"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:layout_marginBottom="6dp"
+				android:src="@drawable/mic_off" />
+   		           		            
+
+		</LinearLayout>
+		
+		<ImageView
+		    android:layout_width="fill_parent" 
+		    android:layout_height="0.3dp"
+		    android:background="#CCCCCC"/>
+
+		<ImageView
+		    android:layout_width="fill_parent" 
+		    android:layout_height="0.7dp"
+		    android:background="#EEEEEE"/>
+		
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="60dp"
+			android:orientation="vertical" 
+			android:gravity="center"
+			android:background="@drawable/background_silver_light_two_state" >
+   		            
+			<ImageView
+				android:id="@+id/imgRevert"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/revert" />
+   			   		            
+		</LinearLayout>
+	    
+	</LinearLayout>
+	-->
+</LinearLayout>   

@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4A4A4A" >
+
+        <ImageButton
+            android:id="@+id/img_btn_tomenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/back"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+
+        <TextView
+            android:id="@+id/text_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:gravity="center_horizontal"
+            android:padding="5dip"
+            android:text="未添加用户"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_reverse"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/cycle" />
+
+        <ImageButton
+            android:id="@+id/btn_online"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_reverse"
+            android:background="@drawable/online" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_main_i"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10" >
+
+        <FrameLayout
+            android:id="@+id/frame_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_vedio"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/lstCameraList"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#DDDDDD"
+                android:dividerHeight="0.5dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_gravity="bottom"
+        android:background="#4A4A4A" >
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#4A4A4A"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_allequipment"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dip"
+                android:layout_weight="1"
+                android:button="@drawable/radio_two"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/radio_scence"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:button="@drawable/radio_three"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/radio_video"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@drawable/bg_chek_four"
+                android:gravity="center" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>
